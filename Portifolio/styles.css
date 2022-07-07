@@ -1,0 +1,23 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  width: 100%;
+  justify-content: center;
+  gap: 5vw;
+  margin-top: 100px;
+}
+
+header{
+  font-size: large;
+}
+img {
+  size: 30%;
+  object-fit: cover;
+  clip-path: url(#svgClip);
+  background-color: rgb(116, 131, 87);
+}
+
+.bla{
+  align-self:center ;
+}
