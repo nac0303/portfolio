@@ -1,8 +1,0 @@
-
-img {
-    width: 30%;
-    object-fit: cover;
-    clip-path: url(#svgClip);
-    background-color: yellowgreen;
-}
-

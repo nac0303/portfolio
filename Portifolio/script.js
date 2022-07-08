@@ -1,16 +1,25 @@
-window.onscroll = function(){
-    var height = document.getElementById("header").offsetHeight
-    console.log(height)
-    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    console.log(scrollTop)
+// about = document.getElementById("Home")
+// abt1 = document.getElementById("1").getBoundingClientRect().y
 
-    if(scrollTop>=height){
-        var element = document.getElementById("header");
-        element.classList.add("bg-light");
-    }
-    else if(scrollTop<height){
-        var element = document.getElementById("header");
-        element.classList.remove("bg-light");
-    }
-    
-}
+// about = document.getElementById("About")
+// abt1 = document.getElementById("2").getBoundingClientRect().y
+
+// about = document.getElementById("Skills")
+// abt1 = document.getElementById("3").getBoundingClientRect().y
+
+// about = document.getElementById("Contact")
+// abt1 = document.getElementById("4").getBoundingClientRect().y
+
+// about.addEventListener('click', function handleClick(){
+//     window.scrollTo(0,abt1);
+// })
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    duration: 2000,
+    delay: 100,
+      reset: true
+  });
+  
+  sr.reveal('.txt',{}); 
