@@ -1,25 +1,44 @@
-// about = document.getElementById("Home")
-// abt1 = document.getElementById("1").getBoundingClientRect().y
-
-// about = document.getElementById("About")
-// abt1 = document.getElementById("2").getBoundingClientRect().y
-
-// about = document.getElementById("Skills")
-// abt1 = document.getElementById("3").getBoundingClientRect().y
-
-// about = document.getElementById("Contact")
-// abt1 = document.getElementById("4").getBoundingClientRect().y
-
-// about.addEventListener('click', function handleClick(){
-//     window.scrollTo(0,abt1);
-// })
-
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '40px',
-    duration: 2000,
-    delay: 100,
-      reset: true
+  origin: "top",
+  distance: "40px",
+  duration: 1500,
+  delay: 100,
+  reset: true,
+});
+
+sr.reveal(".txt", {});
+
+
+
+const br = ScrollReveal({
+  origin: "left",
+  distance: "40px",
+  duration: 1500,
+  delay: 100,
+  reset: true,
+});
+
+br.reveal(".progress", {});
+
+
+var about = document.getElementById("About")
+var abt1 = document.getElementById("1").getBoundingClientRect().y
+console.log(abt1)
+
+about.addEventListener("click", function handleClick() {
+
+    console.log(abt1)
+
+    window.scrollTo(0, abt1);
   });
-  
-  sr.reveal('.txt',{}); 
+
+var skills = document.getElementById("Skills")
+var skill1 = document.getElementById("3").getBoundingClientRect().y
+console.log(skill1)
+
+skills.addEventListener("click", function handleClick() {
+
+    console.log(skill1)
+
+    window.scrollTo(0, skill1);
+  });
