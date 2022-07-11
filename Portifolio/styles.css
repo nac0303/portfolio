@@ -56,7 +56,8 @@ header>li:hover{
   margin-inline: 18vw;
 }
 .row-info>img{
-  height: 45vh;
+  max-width: 430px;
+  max-height: 45vh;
   border-radius: .5rem;
 }
 
@@ -77,4 +78,8 @@ header>li:hover{
 .txt>h1{
   line-height: 25px;
   font-size: 22px;
+}
+
+.imagemmm{
+  max
 }
